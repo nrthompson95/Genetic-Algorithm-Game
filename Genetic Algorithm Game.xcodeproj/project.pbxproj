@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B049AF1D624ED5009E646F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B049AE1D624ED5009E646F /* AppDelegate.swift */; };
+		01B049B11D624ED5009E646F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B049B01D624ED5009E646F /* ViewController.swift */; };
+		01B049B41D624ED5009E646F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B049B21D624ED5009E646F /* Main.storyboard */; };
+		01B049B71D624ED5009E646F /* Genetic_Algorithm_Game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01B049B51D624ED5009E646F /* Genetic_Algorithm_Game.xcdatamodeld */; };
+		01B049B91D624ED5009E646F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B049B81D624ED5009E646F /* Assets.xcassets */; };
+		01B049BC1D624ED5009E646F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B049BA1D624ED5009E646F /* LaunchScreen.storyboard */; };
+		01B049C71D624ED5009E646F /* Genetic_Algorithm_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B049C61D624ED5009E646F /* Genetic_Algorithm_GameTests.swift */; };
+		01B049D21D624ED5009E646F /* Genetic_Algorithm_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B049D11D624ED5009E646F /* Genetic_Algorithm_GameUITests.swift */; };
+		01B049E01D624EF3009E646F /* Genome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B049DF1D624EF3009E646F /* Genome.swift */; };
+		01B049E31D62562B009E646F /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B049E21D62562B009E646F /* Population.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01B049C31D624ED5009E646F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01B049A31D624ED5009E646F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B049AA1D624ED5009E646F;
+			remoteInfo = "Genetic Algorithm Game";
+		};
+		01B049CE1D624ED5009E646F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01B049A31D624ED5009E646F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B049AA1D624ED5009E646F;
+			remoteInfo = "Genetic Algorithm Game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01B049AB1D624ED5009E646F /* Genetic Algorithm Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Genetic Algorithm Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B049AE1D624ED5009E646F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01B049B01D624ED5009E646F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		01B049B31D624ED5009E646F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01B049B61D624ED5009E646F /* Genetic_Algorithm_Game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Genetic_Algorithm_Game.xcdatamodel; sourceTree = "<group>"; };
+		01B049B81D624ED5009E646F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01B049BB1D624ED5009E646F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01B049BD1D624ED5009E646F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B049C21D624ED5009E646F /* Genetic Algorithm GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Genetic Algorithm GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B049C61D624ED5009E646F /* Genetic_Algorithm_GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genetic_Algorithm_GameTests.swift; sourceTree = "<group>"; };
+		01B049C81D624ED5009E646F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B049CD1D624ED5009E646F /* Genetic Algorithm GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Genetic Algorithm GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B049D11D624ED5009E646F /* Genetic_Algorithm_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genetic_Algorithm_GameUITests.swift; sourceTree = "<group>"; };
+		01B049D31D624ED5009E646F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B049DF1D624EF3009E646F /* Genome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genome.swift; sourceTree = "<group>"; };
+		01B049E11D6254AC009E646F /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; };
+		01B049E21D62562B009E646F /* Population.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01B049A81D624ED5009E646F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B049BF1D624ED5009E646F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B049CA1D624ED5009E646F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B049A21D624ED5009E646F = {
+			isa = PBXGroup;
+			children = (
+				01B049E11D6254AC009E646F /* Test.playground */,
+				01B049AD1D624ED5009E646F /* Genetic Algorithm Game */,
+				01B049C51D624ED5009E646F /* Genetic Algorithm GameTests */,
+				01B049D01D624ED5009E646F /* Genetic Algorithm GameUITests */,
+				01B049AC1D624ED5009E646F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01B049AC1D624ED5009E646F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01B049AB1D624ED5009E646F /* Genetic Algorithm Game.app */,
+				01B049C21D624ED5009E646F /* Genetic Algorithm GameTests.xctest */,
+				01B049CD1D624ED5009E646F /* Genetic Algorithm GameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01B049AD1D624ED5009E646F /* Genetic Algorithm Game */ = {
+			isa = PBXGroup;
+			children = (
+				01B049AE1D624ED5009E646F /* AppDelegate.swift */,
+				01B049B01D624ED5009E646F /* ViewController.swift */,
+				01B049B21D624ED5009E646F /* Main.storyboard */,
+				01B049B81D624ED5009E646F /* Assets.xcassets */,
+				01B049BA1D624ED5009E646F /* LaunchScreen.storyboard */,
+				01B049BD1D624ED5009E646F /* Info.plist */,
+				01B049B51D624ED5009E646F /* Genetic_Algorithm_Game.xcdatamodeld */,
+				01B049DF1D624EF3009E646F /* Genome.swift */,
+				01B049E21D62562B009E646F /* Population.swift */,
+			);
+			path = "Genetic Algorithm Game";
+			sourceTree = "<group>";
+		};
+		01B049C51D624ED5009E646F /* Genetic Algorithm GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				01B049C61D624ED5009E646F /* Genetic_Algorithm_GameTests.swift */,
+				01B049C81D624ED5009E646F /* Info.plist */,
+			);
+			path = "Genetic Algorithm GameTests";
+			sourceTree = "<group>";
+		};
+		01B049D01D624ED5009E646F /* Genetic Algorithm GameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				01B049D11D624ED5009E646F /* Genetic_Algorithm_GameUITests.swift */,
+				01B049D31D624ED5009E646F /* Info.plist */,
+			);
+			path = "Genetic Algorithm GameUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01B049AA1D624ED5009E646F /* Genetic Algorithm Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B049D61D624ED5009E646F /* Build configuration list for PBXNativeTarget "Genetic Algorithm Game" */;
+			buildPhases = (
+				01B049A71D624ED5009E646F /* Sources */,
+				01B049A81D624ED5009E646F /* Frameworks */,
+				01B049A91D624ED5009E646F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Genetic Algorithm Game";
+			productName = "Genetic Algorithm Game";
+			productReference = 01B049AB1D624ED5009E646F /* Genetic Algorithm Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01B049C11D624ED5009E646F /* Genetic Algorithm GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B049D91D624ED5009E646F /* Build configuration list for PBXNativeTarget "Genetic Algorithm GameTests" */;
+			buildPhases = (
+				01B049BE1D624ED5009E646F /* Sources */,
+				01B049BF1D624ED5009E646F /* Frameworks */,
+				01B049C01D624ED5009E646F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01B049C41D624ED5009E646F /* PBXTargetDependency */,
+			);
+			name = "Genetic Algorithm GameTests";
+			productName = "Genetic Algorithm GameTests";
+			productReference = 01B049C21D624ED5009E646F /* Genetic Algorithm GameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		01B049CC1D624ED5009E646F /* Genetic Algorithm GameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B049DC1D624ED5009E646F /* Build configuration list for PBXNativeTarget "Genetic Algorithm GameUITests" */;
+			buildPhases = (
+				01B049C91D624ED5009E646F /* Sources */,
+				01B049CA1D624ED5009E646F /* Frameworks */,
+				01B049CB1D624ED5009E646F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01B049CF1D624ED5009E646F /* PBXTargetDependency */,
+			);
+			name = "Genetic Algorithm GameUITests";
+			productName = "Genetic Algorithm GameUITests";
+			productReference = 01B049CD1D624ED5009E646F /* Genetic Algorithm GameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01B049A31D624ED5009E646F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Nick Thompson";
+				TargetAttributes = {
+					01B049AA1D624ED5009E646F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					01B049C11D624ED5009E646F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 01B049AA1D624ED5009E646F;
+					};
+					01B049CC1D624ED5009E646F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 01B049AA1D624ED5009E646F;
+					};
+				};
+			};
+			buildConfigurationList = 01B049A61D624ED5009E646F /* Build configuration list for PBXProject "Genetic Algorithm Game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01B049A21D624ED5009E646F;
+			productRefGroup = 01B049AC1D624ED5009E646F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01B049AA1D624ED5009E646F /* Genetic Algorithm Game */,
+				01B049C11D624ED5009E646F /* Genetic Algorithm GameTests */,
+				01B049CC1D624ED5009E646F /* Genetic Algorithm GameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01B049A91D624ED5009E646F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B049BC1D624ED5009E646F /* LaunchScreen.storyboard in Resources */,
+				01B049B91D624ED5009E646F /* Assets.xcassets in Resources */,
+				01B049B41D624ED5009E646F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B049C01D624ED5009E646F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B049CB1D624ED5009E646F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01B049A71D624ED5009E646F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B049B71D624ED5009E646F /* Genetic_Algorithm_Game.xcdatamodeld in Sources */,
+				01B049B11D624ED5009E646F /* ViewController.swift in Sources */,
+				01B049E01D624EF3009E646F /* Genome.swift in Sources */,
+				01B049AF1D624ED5009E646F /* AppDelegate.swift in Sources */,
+				01B049E31D62562B009E646F /* Population.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B049BE1D624ED5009E646F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B049C71D624ED5009E646F /* Genetic_Algorithm_GameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B049C91D624ED5009E646F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B049D21D624ED5009E646F /* Genetic_Algorithm_GameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01B049C41D624ED5009E646F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01B049AA1D624ED5009E646F /* Genetic Algorithm Game */;
+			targetProxy = 01B049C31D624ED5009E646F /* PBXContainerItemProxy */;
+		};
+		01B049CF1D624ED5009E646F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01B049AA1D624ED5009E646F /* Genetic Algorithm Game */;
+			targetProxy = 01B049CE1D624ED5009E646F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01B049B21D624ED5009E646F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01B049B31D624ED5009E646F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01B049BA1D624ED5009E646F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01B049BB1D624ED5009E646F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01B049D41D624ED5009E646F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01B049D51D624ED5009E646F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01B049D71D624ED5009E646F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Genetic Algorithm Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nick-Thompson.Genetic-Algorithm-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		01B049D81D624ED5009E646F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Genetic Algorithm Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nick-Thompson.Genetic-Algorithm-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		01B049DA1D624ED5009E646F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Genetic Algorithm GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nick-Thompson.Genetic-Algorithm-GameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Genetic Algorithm Game.app/Genetic Algorithm Game";
+			};
+			name = Debug;
+		};
+		01B049DB1D624ED5009E646F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Genetic Algorithm GameTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nick-Thompson.Genetic-Algorithm-GameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Genetic Algorithm Game.app/Genetic Algorithm Game";
+			};
+			name = Release;
+		};
+		01B049DD1D624ED5009E646F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Genetic Algorithm GameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nick-Thompson.Genetic-Algorithm-GameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Genetic Algorithm Game";
+			};
+			name = Debug;
+		};
+		01B049DE1D624ED5009E646F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Genetic Algorithm GameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nick-Thompson.Genetic-Algorithm-GameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Genetic Algorithm Game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01B049A61D624ED5009E646F /* Build configuration list for PBXProject "Genetic Algorithm Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B049D41D624ED5009E646F /* Debug */,
+				01B049D51D624ED5009E646F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01B049D61D624ED5009E646F /* Build configuration list for PBXNativeTarget "Genetic Algorithm Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B049D71D624ED5009E646F /* Debug */,
+				01B049D81D624ED5009E646F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		01B049D91D624ED5009E646F /* Build configuration list for PBXNativeTarget "Genetic Algorithm GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B049DA1D624ED5009E646F /* Debug */,
+				01B049DB1D624ED5009E646F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		01B049DC1D624ED5009E646F /* Build configuration list for PBXNativeTarget "Genetic Algorithm GameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B049DD1D624ED5009E646F /* Debug */,
+				01B049DE1D624ED5009E646F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		01B049B51D624ED5009E646F /* Genetic_Algorithm_Game.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				01B049B61D624ED5009E646F /* Genetic_Algorithm_Game.xcdatamodel */,
+			);
+			currentVersion = 01B049B61D624ED5009E646F /* Genetic_Algorithm_Game.xcdatamodel */;
+			path = Genetic_Algorithm_Game.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 01B049A31D624ED5009E646F /* Project object */;
+}

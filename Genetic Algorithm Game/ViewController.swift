@@ -39,6 +39,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         GenerationLabel.text = String(generation);
         FitnessTargetLabel.text = String(population.getFitnessTarget());
+        fillTable()
+    }
+    
+    func fillTable() {
+        for i in 0 ..< population.numSpecies {
+            
+        }
     }
 }
 

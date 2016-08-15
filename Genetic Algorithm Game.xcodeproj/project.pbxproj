@@ -17,6 +17,7 @@
 		01B049D21D624ED5009E646F /* Genetic_Algorithm_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B049D11D624ED5009E646F /* Genetic_Algorithm_GameUITests.swift */; };
 		01B049E01D624EF3009E646F /* Genome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B049DF1D624EF3009E646F /* Genome.swift */; };
 		01B049E31D62562B009E646F /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B049E21D62562B009E646F /* Population.swift */; };
+		01C123471D62732C00F8ABD1 /* GATableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C123461D62732C00F8ABD1 /* GATableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		01B049DF1D624EF3009E646F /* Genome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genome.swift; sourceTree = "<group>"; };
 		01B049E11D6254AC009E646F /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; };
 		01B049E21D62562B009E646F /* Population.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
+		01C123461D62732C00F8ABD1 /* GATableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GATableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,14 +108,13 @@
 			isa = PBXGroup;
 			children = (
 				01B049AE1D624ED5009E646F /* AppDelegate.swift */,
-				01B049B01D624ED5009E646F /* ViewController.swift */,
+				01C123491D62733900F8ABD1 /* Back End */,
+				01C123481D62733200F8ABD1 /* Front End */,
 				01B049B21D624ED5009E646F /* Main.storyboard */,
 				01B049B81D624ED5009E646F /* Assets.xcassets */,
 				01B049BA1D624ED5009E646F /* LaunchScreen.storyboard */,
 				01B049BD1D624ED5009E646F /* Info.plist */,
 				01B049B51D624ED5009E646F /* Genetic_Algorithm_Game.xcdatamodeld */,
-				01B049DF1D624EF3009E646F /* Genome.swift */,
-				01B049E21D62562B009E646F /* Population.swift */,
 			);
 			path = "Genetic Algorithm Game";
 			sourceTree = "<group>";
@@ -134,6 +135,24 @@
 				01B049D31D624ED5009E646F /* Info.plist */,
 			);
 			path = "Genetic Algorithm GameUITests";
+			sourceTree = "<group>";
+		};
+		01C123481D62733200F8ABD1 /* Front End */ = {
+			isa = PBXGroup;
+			children = (
+				01B049B01D624ED5009E646F /* ViewController.swift */,
+				01C123461D62732C00F8ABD1 /* GATableView.swift */,
+			);
+			name = "Front End";
+			sourceTree = "<group>";
+		};
+		01C123491D62733900F8ABD1 /* Back End */ = {
+			isa = PBXGroup;
+			children = (
+				01B049DF1D624EF3009E646F /* Genome.swift */,
+				01B049E21D62562B009E646F /* Population.swift */,
+			);
+			name = "Back End";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +289,7 @@
 				01B049B71D624ED5009E646F /* Genetic_Algorithm_Game.xcdatamodeld in Sources */,
 				01B049B11D624ED5009E646F /* ViewController.swift in Sources */,
 				01B049E01D624EF3009E646F /* Genome.swift in Sources */,
+				01C123471D62732C00F8ABD1 /* GATableView.swift in Sources */,
 				01B049AF1D624ED5009E646F /* AppDelegate.swift in Sources */,
 				01B049E31D62562B009E646F /* Population.swift in Sources */,
 			);
@@ -496,6 +516,7 @@
 				01B049D81D624ED5009E646F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01B049D91D624ED5009E646F /* Build configuration list for PBXNativeTarget "Genetic Algorithm GameTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +525,7 @@
 				01B049DB1D624ED5009E646F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01B049DC1D624ED5009E646F /* Build configuration list for PBXNativeTarget "Genetic Algorithm GameUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +534,7 @@
 				01B049DE1D624ED5009E646F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

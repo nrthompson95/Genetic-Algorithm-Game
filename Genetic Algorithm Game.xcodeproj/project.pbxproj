@@ -17,7 +17,7 @@
 		01B049D21D624ED5009E646F /* Genetic_Algorithm_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B049D11D624ED5009E646F /* Genetic_Algorithm_GameUITests.swift */; };
 		01B049E01D624EF3009E646F /* Genome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B049DF1D624EF3009E646F /* Genome.swift */; };
 		01B049E31D62562B009E646F /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B049E21D62562B009E646F /* Population.swift */; };
-		01C123471D62732C00F8ABD1 /* GATableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C123461D62732C00F8ABD1 /* GATableView.swift */; };
+		01C1234B1D6277B700F8ABD1 /* GATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C1234A1D6277B700F8ABD1 /* GATableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,7 @@
 		01B049DF1D624EF3009E646F /* Genome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genome.swift; sourceTree = "<group>"; };
 		01B049E11D6254AC009E646F /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; };
 		01B049E21D62562B009E646F /* Population.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
-		01C123461D62732C00F8ABD1 /* GATableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GATableView.swift; sourceTree = "<group>"; };
+		01C1234A1D6277B700F8ABD1 /* GATableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GATableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				01B049B01D624ED5009E646F /* ViewController.swift */,
-				01C123461D62732C00F8ABD1 /* GATableView.swift */,
+				01C1234A1D6277B700F8ABD1 /* GATableViewCell.swift */,
 			);
 			name = "Front End";
 			sourceTree = "<group>";
@@ -287,9 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				01B049B71D624ED5009E646F /* Genetic_Algorithm_Game.xcdatamodeld in Sources */,
+				01C1234B1D6277B700F8ABD1 /* GATableViewCell.swift in Sources */,
 				01B049B11D624ED5009E646F /* ViewController.swift in Sources */,
 				01B049E01D624EF3009E646F /* Genome.swift in Sources */,
-				01C123471D62732C00F8ABD1 /* GATableView.swift in Sources */,
 				01B049AF1D624ED5009E646F /* AppDelegate.swift in Sources */,
 				01B049E31D62562B009E646F /* Population.swift in Sources */,
 			);

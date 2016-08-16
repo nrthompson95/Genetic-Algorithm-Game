@@ -36,7 +36,7 @@ class Population {
         self.init(numberOfSpecies: 5, target: fitnessArr);
     }
     
-    private func breedGenome(father: Genome, mother: Genome) {
+    private func breedGenome(father: Genome, mother: Genome){
         let rand = GKRandomDistribution(lowestValue: 0, highestValue: 1)
         var code = [Int]();
         for i in 0 ..< 8 {
@@ -47,21 +47,23 @@ class Population {
                 code.append(mother.getGeneticCodeValueAtIndex(i))
             }
         }
-        entities.append(Genome(withCode: code));
+        let gen = Genome(withCode: code)
+        gen.recombine();
+        entities.append(gen);
     }
     
     private func sortByFitness() {
         entities.sortInPlace { (g1, g2) -> Bool in
             if g1.getFitnessScore(targetFitness) >= g2.getFitnessScore(targetFitness) {
-                return true
+                return false
             }
-            return false
+            return true
         }
     }
     
     private func cull() {
         self.sortByFitness()
-        while entities.count >= numSpecies {
+        while entities.count > numSpecies {
             entities.removeLast()
         }
     }
@@ -83,6 +85,10 @@ class Population {
         return value;
     }
     
+    func getFitnessBits() -> [Int] {
+        return targetFitness
+    }
+    
     func performLifeCycle() {
         self.sortByFitness()
         var leftToBreed = [Genome](entities.reverse())
@@ -94,5 +100,9 @@ class Population {
         }
         
         cull();
+    }
+    
+    func getAllGenome() -> [Genome] {
+        return entities;
     }
 }

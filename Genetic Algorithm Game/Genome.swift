@@ -34,6 +34,14 @@ class Genome {
         }
     }
     
+    func recombine() {
+        for i in 0 ..< geneticCode.count {
+            if(arc4random_uniform(5) == 0) {
+                geneticCode[i] ^= 1
+            }
+        }
+    }
+    
     func getGeneticCodeValueAtIndex(index: Int) -> Int{
         return geneticCode[index]
     }

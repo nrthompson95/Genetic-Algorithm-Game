@@ -16,7 +16,7 @@ class Genome {
     
     private let rand = GKRandomDistribution(lowestValue: 0, highestValue: 1);
     /**
-     Works like a binary number, [0|1|...|7|8] -> 0 is MSB, 8 is LSB
+     Works like a binary number, [0|1|...|61|62] -> 0 is MSB, 62 is LSB
     */
     private var geneticCode : [Int]
     
@@ -28,8 +28,8 @@ class Genome {
      Returns a random genetic sequence.
     */
     init() {
-        geneticCode = [Int](count: 8, repeatedValue: 0);
-        for i in 0 ..< 8 {
+        geneticCode = [Int](count: 16, repeatedValue: 0);
+        for i in 0 ..< 16 {
             updateValueAtLocation(i, withValue: rand.nextInt())
         }
     }
@@ -52,7 +52,7 @@ class Genome {
     
     func getNumericalValue() -> Int{
         var value = 0;
-        for i in 0 ..< 8 {
+        for i in 0 ..< 16 {
             value = value << 1
             value += geneticCode[i];
         }
@@ -61,7 +61,7 @@ class Genome {
     
     func getFitnessScore(forTarget: [Int]) -> Int {
         var val = 0;
-        for i in 0 ..< 8 {
+        for i in 0 ..< 16 {
             val += forTarget[i] ^ geneticCode[i]
         }
         return val

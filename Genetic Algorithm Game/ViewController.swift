@@ -33,9 +33,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @IBAction func AdvanceGeneration(sender: UIButton) {
-        generation += 1
-        population.performLifeCycle()
-        self.GeneticTable.reloadData()
+        if(population.getAllGenome()[0].getFitnessScore(population.getFitnessBits()) != 0) {
+            generation += 1
+            population.performLifeCycle()
+            self.GeneticTable.reloadData()
+        }
     }
     
     @IBAction func FindAnswer(sender: AnyObject) {

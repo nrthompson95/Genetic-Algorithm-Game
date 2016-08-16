@@ -30,7 +30,7 @@ class Population {
     convenience init() {
         let rand = GKRandomDistribution(lowestValue: 0, highestValue: 1)
         var fitnessArr = [Int]()
-        for _ in 0 ..< 8 {
+        for _ in 0 ..< 16 {
             fitnessArr.append(rand.nextInt());
         }
         self.init(numberOfSpecies: 5, target: fitnessArr);
@@ -39,7 +39,7 @@ class Population {
     private func breedGenome(father: Genome, mother: Genome){
         let rand = GKRandomDistribution(lowestValue: 0, highestValue: 1)
         var code = [Int]();
-        for i in 0 ..< 8 {
+        for i in 0 ..< 16 {
             if(rand.nextBool()) {
                 code.append(father.getGeneticCodeValueAtIndex(i))
             }

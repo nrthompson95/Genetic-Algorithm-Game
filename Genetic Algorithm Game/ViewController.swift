@@ -38,6 +38,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.GeneticTable.reloadData()
     }
     
+    @IBAction func FindAnswer(sender: AnyObject) {
+        while(population.getAllGenome()[0].getFitnessScore(population.getFitnessBits()) != 0) {
+            generation += 1;
+            population.performLifeCycle()
+        }
+        self.GeneticTable.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         GenerationLabel.text = String(generation);

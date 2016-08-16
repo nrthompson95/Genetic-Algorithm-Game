@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -72,32 +73,6 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2SD-jb-UEl">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.26034402905580445" green="0.85859341146875279" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Advance Generation">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="34" y="164" width="139" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="AdvanceGeneration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EhP-ob-Jvg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0u-Ak-KbM">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.26034402905580445" green="0.85859341146875279" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="217" y="164" width="139" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="ResetButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JrC-7a-nHU"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PeN-2C-CwW">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -106,6 +81,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wn8-Kk-APh" id="8LE-5F-Gyu">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Value:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hbY-0b-mhT">
@@ -165,6 +141,45 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2SD-jb-UEl">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.26034402905580445" green="0.85859341146875279" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Advance">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="28" y="157" width="105" height="46"/>
+                                </variation>
+                                <connections>
+                                    <action selector="AdvanceGeneration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EhP-ob-Jvg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0u-Ak-KbM">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.26034402905580445" green="0.85859341146875279" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="254" y="157" width="105" height="46"/>
+                                </variation>
+                                <connections>
+                                    <action selector="ResetButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JrC-7a-nHU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeU-jN-0kk">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.26034402909999999" green="0.85859341150000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Answer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="141" y="157" width="105" height="46"/>
+                                </variation>
+                                <connections>
+                                    <action selector="FindAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PFU-J8-XIy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -200,16 +215,20 @@
                                 <exclude reference="mTW-gJ-fV6"/>
                                 <exclude reference="3MS-Sg-Um7"/>
                                 <exclude reference="nyJ-pO-MU6"/>
+                                <exclude reference="PeN-2C-CwW"/>
                                 <exclude reference="2SD-jb-UEl"/>
                                 <exclude reference="e0u-Ak-KbM"/>
-                                <exclude reference="PeN-2C-CwW"/>
+                                <exclude reference="JeU-jN-0kk"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="91C-19-hWH"/>
                                 <exclude reference="EkJ-L3-vkM"/>
                                 <exclude reference="hU5-Th-gHr"/>
                                 <exclude reference="hwZ-Mo-Fzp"/>
                                 <exclude reference="vQY-x5-SG9"/>
                                 <exclude reference="w0w-wQ-Vmr"/>
+                                <exclude reference="hUk-sd-DgZ"/>
+                                <exclude reference="uL2-Kn-rRp"/>
                                 <exclude reference="F3H-6g-l9p"/>
                                 <exclude reference="MrX-ws-ELX"/>
                                 <exclude reference="NUN-EX-0Nj"/>
@@ -218,10 +237,7 @@
                                 <exclude reference="Ljj-Pj-zYC"/>
                                 <exclude reference="Z5L-NT-Hcm"/>
                                 <exclude reference="yVQ-2G-MtI"/>
-                                <exclude reference="hUk-sd-DgZ"/>
-                                <exclude reference="uL2-Kn-rRp"/>
                                 <exclude reference="U5j-dG-57O"/>
-                                <exclude reference="91C-19-hWH"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -230,16 +246,20 @@
                                 <include reference="mTW-gJ-fV6"/>
                                 <include reference="3MS-Sg-Um7"/>
                                 <include reference="nyJ-pO-MU6"/>
+                                <include reference="PeN-2C-CwW"/>
                                 <include reference="2SD-jb-UEl"/>
                                 <include reference="e0u-Ak-KbM"/>
-                                <include reference="PeN-2C-CwW"/>
+                                <include reference="JeU-jN-0kk"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="91C-19-hWH"/>
                                 <include reference="EkJ-L3-vkM"/>
                                 <include reference="hU5-Th-gHr"/>
                                 <include reference="hwZ-Mo-Fzp"/>
                                 <include reference="vQY-x5-SG9"/>
                                 <include reference="w0w-wQ-Vmr"/>
+                                <include reference="hUk-sd-DgZ"/>
+                                <include reference="uL2-Kn-rRp"/>
                                 <include reference="F3H-6g-l9p"/>
                                 <include reference="MrX-ws-ELX"/>
                                 <include reference="NUN-EX-0Nj"/>
@@ -248,10 +268,7 @@
                                 <include reference="Ljj-Pj-zYC"/>
                                 <include reference="Z5L-NT-Hcm"/>
                                 <include reference="yVQ-2G-MtI"/>
-                                <include reference="hUk-sd-DgZ"/>
-                                <include reference="uL2-Kn-rRp"/>
                                 <include reference="U5j-dG-57O"/>
-                                <include reference="91C-19-hWH"/>
                             </mask>
                         </variation>
                     </view>

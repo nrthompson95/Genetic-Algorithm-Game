@@ -10,8 +10,8 @@ import Foundation
 import GameKit
 
 class Population {
-    private var entities : [Genome]
-    private let targetFitness : [Int];
+    fileprivate var entities : [Genome]
+    fileprivate let targetFitness : [Int];
     let numSpecies : Int;
     
     init(numberOfSpecies: Int, target: [Int]) {
@@ -36,7 +36,7 @@ class Population {
         self.init(numberOfSpecies: 5, target: fitnessArr);
     }
     
-    private func breedGenome(father: Genome, mother: Genome){
+    fileprivate func breedGenome(_ father: Genome, mother: Genome){
         let rand = GKRandomDistribution(lowestValue: 0, highestValue: 1)
         var code = [Int]();
         for i in 0 ..< 16 {
@@ -52,8 +52,8 @@ class Population {
         entities.append(gen);
     }
     
-    private func sortByFitness() {
-        entities.sortInPlace { (g1, g2) -> Bool in
+    fileprivate func sortByFitness() {
+        entities.sort { (g1, g2) -> Bool in
             if g1.getFitnessScore(targetFitness) >= g2.getFitnessScore(targetFitness) {
                 return false
             }
@@ -61,14 +61,14 @@ class Population {
         }
     }
     
-    private func cull() {
+    fileprivate func cull() {
         self.sortByFitness()
         while entities.count > numSpecies {
             entities.removeLast()
         }
     }
     
-    private func getGenomeScores() -> [Int]{
+    fileprivate func getGenomeScores() -> [Int]{
         var scores = [Int]();
         for g in entities {
             scores.append(g.getFitnessScore(targetFitness))
@@ -91,7 +91,7 @@ class Population {
     
     func performLifeCycle() {
         self.sortByFitness()
-        var leftToBreed = [Genome](entities.reverse())
+        var leftToBreed = [Genome](entities.reversed())
         
         while(leftToBreed.count >= 2) {
             let father = leftToBreed.popLast()!

@@ -26,13 +26,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
-    @IBAction func ResetButtonPushed(sender: UIButton) {
+    @IBAction func ResetButtonPushed(_ sender: UIButton) {
         population = Population();
         generation = 0;
         self.GeneticTable.reloadData()
     }
     
-    @IBAction func AdvanceGeneration(sender: UIButton) {
+    @IBAction func AdvanceGeneration(_ sender: UIButton) {
         if(population.getAllGenome()[0].getFitnessScore(population.getFitnessBits()) != 0) {
             generation += 1
             population.performLifeCycle()
@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
-    @IBAction func FindAnswer(sender: AnyObject) {
+    @IBAction func FindAnswer(_ sender: AnyObject) {
         while(population.getAllGenome()[0].getFitnessScore(population.getFitnessBits()) != 0) {
             generation += 1;
             population.performLifeCycle()
@@ -57,19 +57,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         GeneticTable.dataSource = self;
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell : GATableViewCell! = tableView.dequeueReusableCellWithIdentifier("GACell") as! GATableViewCell?
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell : GATableViewCell! = tableView.dequeueReusableCell(withIdentifier: "GACell") as! GATableViewCell?
         
         cell.valueTextField.text = String(population.getAllGenome()[indexPath.row].getNumericalValue());
         cell.fitnessTextField.text = String(population.getAllGenome()[indexPath.row].getFitnessScore(population.getFitnessBits()));
         return cell
     }
     
-    func tableView(tableView:UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView:UITableView, numberOfRowsInSection section: Int) -> Int {
         return population.getAllGenome().count;
     }
     
-    func numberOfSectionsInTableView(tableView:UITableView) -> Int {
+    func numberOfSections(in tableView:UITableView) -> Int {
         return 1
     }
 }
